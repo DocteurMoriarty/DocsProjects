@@ -5,9 +5,9 @@
     "activeMatch": "/guide/"
   },
   {
-    "text": "Hello world",
-    "link": "/hello/",
-    "activeMatch": "/hello/"
+    "text": "MariaDB",
+    "link": "/mariadb/",
+    "activeMatch": "/mariadb/"
   },
   {
     "text": "API",

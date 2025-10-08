@@ -2,13 +2,15 @@
 pageType: home
 
 hero:
-  name: My Site
-  text: A cool website!
-  tagline: This is the tagline
+  name: Docs
+  text: install securely with better reflexes!
   actions:
     - theme: brand
       text: Quick Start
       link: /guide/
+    - theme: brand
+      text: Installation MariaDB
+      link: /mariadb/
     - theme: alt
       text: GitHub
       link: https://github.com/web-infra-dev/rspress
