@@ -1,0 +1,19 @@
+[
+  {
+    "type": "file",
+    "name": "introduction",
+    "label": "Introduction"
+  },
+  {
+    "type": "divider"
+  },
+  {
+    "type": "dir",
+    "name": "installation",
+    "label": "Installation",
+    "collapsible": true,
+    "collapsed": true
+  }
+
+
+]

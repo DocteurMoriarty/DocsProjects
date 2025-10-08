@@ -6,11 +6,11 @@ hero:
   text: install securely with better reflexes!
   actions:
     - theme: brand
-      text: Quick Start
-      link: /guide/
-    - theme: brand
-      text: Installation MariaDB
+      text: MariaDB
       link: /mariadb/
+    - theme: brand
+      text: OpenSSH
+      link: /openssh/
     - theme: alt
       text: GitHub
       link: https://github.com/web-infra-dev/rspress
