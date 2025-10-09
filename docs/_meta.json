@@ -1,13 +1,13 @@
 [
   {
-    "text": "Guide",
-    "link": "/guide/",
-    "activeMatch": "/guide/"
-  },
-  {
     "text": "MariaDB",
     "link": "/mariadb/",
     "activeMatch": "/mariadb/"
+  },
+  {
+    "text": "OpenSSH",
+    "link": "/openssh/",
+    "activeMatch": "/openssh/"
   },
   {
     "text": "API",

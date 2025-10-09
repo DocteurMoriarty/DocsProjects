@@ -1,7 +1,7 @@
 [
   {
     "type": "file",
-    "name": "introduction",
+    "name": "index",
     "label": "Introduction"
   },
   {
@@ -11,6 +11,13 @@
     "type": "dir",
     "name": "installation",
     "label": "Installation",
+    "collapsible": true,
+    "collapsed": true
+  },
+  {
+    "type": "dir",
+    "name": "configuration",
+    "label": "Configuration",
     "collapsible": true,
     "collapsed": true
   }
