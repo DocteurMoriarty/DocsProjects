@@ -1,13 +1,13 @@
-import * as path from 'node:path';
 import { defineConfig } from 'rspress/config';
+import path from 'path';
 
 export default defineConfig({
+  globalStyles: path.join(__dirname, 'styles/index.css'),
   root: path.join(__dirname, 'docs'),
   title: 'Docs | Zenth Project',
   icon: '/logo.png',
   logo: {
-    light: '/rspress-light-logo.png',
-    dark: '/rspress-dark-logo.png',
+    light: '/logo.png',
+    dark: '/logo.png',
   }
 });
-
