@@ -11,11 +11,11 @@ hero:
     - theme: brand
       text: OpenSSH
       link: /openssh/
-    - theme: alt
-      text: GitHub
-      link: https://github.com/web-infra-dev/rspress
+    - theme: brand
+      text: Docker Engine
+      link: /docker/
   image:
-    src: /rspress-icon.png
+    src: /logo.png
     alt: Logo
 features:
   - title: Blazing fast build speed

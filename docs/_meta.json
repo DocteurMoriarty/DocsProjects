@@ -13,9 +13,5 @@
     "text": "OpenSSH",
     "link": "/openssh/",
     "activeMatch": "/openssh/"
-  },
-  {
-    "text": "API",
-    "link": "https://rspress.dev/api/index.html"
   }
 ]
