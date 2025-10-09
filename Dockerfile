@@ -3,7 +3,7 @@ WORKDIR /app
 COPY . .
 RUN bun install --frozen-lockfile
 RUN bun run build
-FROM busybox:late
+FROM busybox:latest
 RUN adduser -D static
 USER static
 WORKDIR /home/static
