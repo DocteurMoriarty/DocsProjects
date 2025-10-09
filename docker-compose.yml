@@ -1,0 +1,32 @@
+version: '3.8'
+
+services:
+  docs:
+    build: .
+    ports:
+      - "4173:3000"
+    volumes:
+      # Montage du code source pour le développement avec hot reload
+      - .:/app
+      - /app/node_modules
+    environment:
+      - NODE_ENV=development
+      - RSPRESS_BUILD_DIR=/tmp/build
+    command: ["npx", "rspress", "dev", "--host", "0.0.0.0"]
+    restart: unless-stopped
+
+  # Service pour la production (build statique)
+  docs-prod:
+    build: .
+    ports:
+      - "4174:3000"
+    volumes:
+      - .:/app
+      - /app/node_modules
+    environment:
+      - NODE_ENV=production
+      - RSPRESS_BUILD_DIR=/tmp/build
+    command: ["sh", "-c", "npx rspress build && npx rspress preview --host 0.0.0.0"]
+    restart: unless-stopped
+    profiles:
+      - production

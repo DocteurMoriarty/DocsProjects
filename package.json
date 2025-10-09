@@ -1,0 +1,20 @@
+{
+  "name": "docs-zenth",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "build": "rspress build",
+    "dev": "rspress dev",
+    "preview": "rspress preview",
+    "docker:dev": "docker-compose up docs",
+    "docker:prod": "docker-compose --profile production up docs-prod",
+    "docker:build": "docker-compose build",
+    "docker:down": "docker-compose down"
+  },
+  "dependencies": {
+    "rspress": "^1.45.6"
+  },
+  "devDependencies": {
+    "@types/node": "^18.11.17"
+  }
+}

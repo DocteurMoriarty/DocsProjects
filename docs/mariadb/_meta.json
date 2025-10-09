@@ -1,0 +1,19 @@
+[
+  {
+    "type": "section-header",
+    "label": "Introduction"
+  },
+  "introduction",
+  {
+    "type": "divider"
+  },
+  {
+    "type": "",
+    "label": "Section 1"
+  },
+  {
+    "type": "section-header",
+    "label": "Section 2"
+  },
+  "advanced"
+]
