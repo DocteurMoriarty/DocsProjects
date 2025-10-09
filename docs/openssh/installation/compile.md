@@ -1,4 +1,4 @@
-## 1. Installation on Linux
+## Installation
 
 ### Debian / Ubuntu
 
@@ -33,22 +33,36 @@ wget --https-only --secure-protocol=TLSv1_3 --ca-directory=/etc/ssl/certs "$SIG_
 ```bash 
 wget --https-only --secure-protocol=TLSv1_3 --ca-directory=/etc/ssl/certs https://cdn.openbsd.org/pub/OpenBSD/OpenSSH/RELEASE_KEY.asc -O openssh-keys.asc
 ```
-####
+#### Verifying OpenSSH public keys
+Before verifying the OpenSSH file signature, it is recommended to **verify the fingerprint of the keys contained** in `openssh-keys.asc`.  
+The command below displays all public keys and their fingerprints to ensure that they match the official keys published by OpenSSH
+```bash
 gpg --show-keys --with-fingerprint openssh-keys.asc
+```
+![Logo OpenSSH](/openssh/keyopensshverify.png)
 
 
-####
+This command imports the public key downloaded from the official OpenSSH website into your GPG keyring, which then allows you to verify the signatures of downloaded files.
+
+```bash
 gpg --import openssh-keys.asc
+```
 
-
-# Vérification de la signature
+#### Signature verification
+```bash
 gpg --verify "openssh-$VERSION.tar.gz.asc" "openssh-$VERSION.tar.gz"
+```
+![Logo OpenSSH](/openssh/same-signatures.png)
 
-# Extraction si la vérification est OK
+
+#### Extract if verification is OK
+```bash
 tar -xzf "openssh-$VERSION.tar.gz"
-cd "openssh-$VERSION"
-
-# Compilation classique
+cd ssh
+```
+#### Compilation
+```bash
 ./configure
 make
 sudo make install
+```

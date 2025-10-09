@@ -5,6 +5,11 @@
     "activeMatch": "/mariadb/"
   },
   {
+    "text": "Docker Engine",
+    "link": "/docker/",
+    "activeMatch": "/docker/"
+  },
+  {
     "text": "OpenSSH",
     "link": "/openssh/",
     "activeMatch": "/openssh/"
