@@ -1,16 +1,28 @@
-:root {
-  /* Modify theme color */
-  --rp-c-brand: rgb(255, 0, 255);
-  --rp-c-brand-dark: #cc00ff;
-  --rp-c-brand-darker: #861dc2;
-  --rp-c-brand-light: #d45af2;
-  --rp-c-brand-lighter: #d45af2;
-  /* Modify the width of the left sidebar */
-  --rp-sidebar-width: 280px;
-  /* Modify the width of the right outline column */
-  --rp-aside-width: 256px;
-  /* Modify the background of the code block title */
-  --rp-code-title-bg: rgba(143, 61, 250, 0.986);
-  /* Modify the background of the code block content */
-  --rp-code-block-bg: rgba(238, 136, 229, 0.712);
+.dark {
+  /* Couleurs principales en mode sombre */
+  --rp-c-brand: #bb86fc; /* Violet doux et lumineux */
+  --rp-c-brand-dark: #9b59d0;
+  --rp-c-brand-darker: #6a1bb1;
+  --rp-c-brand-light: #d8baff;
+  --rp-c-brand-lighter: #f0e6ff;
+
+  /* Fond général et texte */
+  --rp-c-bg: #121212; /* Fond très sombre */
+  --rp-c-bg-light: #1e1e1e;
+  --rp-c-bg-dark: #000000;
+  --rp-c-text: #e0e0e0; /* Texte clair */
+  --rp-c-text-light: #c0c0c0;
+
+  /* Blocs de code */
+  --rp-code-title-bg: #2e003e; /* Violet foncé pour le titre */
+  --rp-code-block-bg: #1e1e1e; /* Fond sombre pour le code */
+  --rp-c-text-code: #f8f8f2; /* Texte très clair dans les blocs */
+
+  /* Liens */
+  --rp-c-link: #bb86fc;
+  --rp-c-link-hover: #d8baff;
+
+  /* Bordures et accents */
+  --rp-c-border: #3c3c3c;
+  --rp-c-hover: #9b59d0;
 }
