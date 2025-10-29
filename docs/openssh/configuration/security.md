@@ -14,12 +14,44 @@ While the official man page offers a comprehensive reference, this guide adds pr
 >    ```
 >    Sets the listening port for the SSH service. Changing the default port (22)  
 >    can reduce automated attacks.
->
+>```bash
+>   HostKey /etc/ssh/ssh_host_ed25519_key
+>   HostKey /etc/ssh/ssh_host_rsa_key
+>   ```
+>   Specifies the host key files used by the server. Allows you to choose the signature algorithms.
+>```bash
+>   Protocol 2
+>    ```
+>   Forces the use of SSH protocol version 2 (more secure than version 1, now obsolete).
 >```bash
 >    PermitRootLogin no  
 >   ```
 >    Prohibits direct connection as root. Recommended to prevent  
 >    compromises.
+>```bash
+>   StrictModes yes
+>   ```
+>   Checks the permissions of .ssh files and refuses the connection if they are too permissive.
+>```bash
+>   LoginGraceTime 60
+>   ```
+>   Time allowed for the user to authenticate before the connection is closed.
+>```bash
+>   Compression delayed
+>   ```
+>   Enables SSH compression only after authentication.
+>```bash
+>   SyslogFacility AUTH
+>   ```
+>   Sets the logging category used by SSH in syslog.
+>```bash
+>   LogLevel INFO
+>   ```
+>   Logging level.
+>```bash
+>   ChallengeResponseAuthentication no
+>   ```
+>   Disables interactive authentication methods such as OTP or PAM challenge-response.
 >```bash
 >    PasswordAuthentication no
 >   ```
